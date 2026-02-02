@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказать | ИДМ group</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container"><a href="index.html" class="logo">ИДМ GROUP</a></div>
+    </nav>
+
+    <section class="order-page container">
+        <div class="order-card animate__animated animate__zoomIn">
+            <h2>Оставить заявку</h2>
+            <form id="tgForm">
+                <input type="text" id="name" placeholder="Ваше имя" required>
+                <!-- Поле с вечным +7 и лимитом в 10 цифр -->
+                <input type="tel" id="phone" value="+7 " maxlength="14" required>
+                <select id="service">
+                    <option value="Сварка">Сварка</option>
+                    <option value="Покраска">Покраска</option>
+                    <option value="Резка">Лазерная резка</option>
+                </select>
+                <textarea id="msg" placeholder="Описание задачи" rows="4"></textarea>
+                <button type="submit" class="btn-main">ОТПРАВИТЬ ЗАКАЗ</button>
+            </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
